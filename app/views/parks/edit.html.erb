@@ -3,12 +3,13 @@
  -->
 
 <h2>Edit Park Information</h2>
-
-<%= bootstrap_form_for @park do |p|%>
-	<%=p.text_field :name%>
-	<%=p.text_field :description%>
-	<%=p.text_field :picture%>
-	<%=p.submit%>
-<%end%>
-<%= link_to "Delete Park", park_path(@park), method: :delete, class: 'btn btn-danger' %>
+<div>
+	<%= bootstrap_form_for @park do |p|%>
+		<%=p.text_field :name%>
+		<%=p.text_field :description%>
+		<%=p.text_field :picture%>
+		<%=p.submit%>
+	<%end%>
+	<%= link_to "Delete Park", park_path(@park), method: :delete, class: 'btn btn-danger' %>
+</div>
 
