@@ -2,11 +2,10 @@
 <p>Find me in app/views/parks/index.html.erb</p>
  -->
  <%@parks.each do |item|%>
-	<div class="well col-xs-6">
-		<h2><%=item.name%></h2>
-		<a href="parks/<%=item.id%>">View</a>
-		<a href="parks/<%=item.id%>/edit">Edit</a>
-		<p><%=item.description%></p>
+	<div class="col-xs-12">
+		<h2 class="text-center park-title"><a href="parks/<%=item.id%>"><%=item.name%></a></h2>
+		<!-- <a href="parks/<%=item.id%>/edit">Edit</a>
+		<p><%=item.description%></p> -->
 		<img class="index-images" src="<%=item.picture%>" alt="">
 	</div>
 <%end%>

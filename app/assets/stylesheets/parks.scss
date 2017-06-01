@@ -1,6 +1,57 @@
 // Place all the styles related to the parks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.index-images{
+body{
+	font-family: 'Raleway', sans-serif;
+}
+a:hover{
+	text-decoration: none
+}
+img {
 	width: 100%
 }
+
+
+header {
+	padding-top: 20px;
+  background: darkslategrey;
+	padding-bottom: 15px;
+	color: white;
+	position: relative;
+	z-index: 100;
+}
+header span{
+	padding: 0 10px;
+}
+header span a{
+	color: white
+}
+
+header span a:hover{
+	color: darkgrey;
+}
+
+.index-images{
+	height: 500px;
+}
+
+.park-title{
+	position: relative;
+  top: 156px;
+  padding: 32px;
+  background: rgba(1,1,1,.5);
+}
+
+h2 a{
+	color:white
+}
+
+h2 a:hover{
+	color: darkgrey;
+}
+
+
+.col-xs-12{
+	margin-top: -111px
+}
+

@@ -2,6 +2,8 @@
 <p>Find me in app/views/parks/show.html.erb</p>
  -->
  <div class="well">
-
-<%=@park.name%>
+		<h2><%=@park.name%></h2>
+		<p><%=@park.description%></p>
+		<a href="<%=@park.id%>/edit">Edit This Park</a>
+		<img src="<%=@park.picture%>" alt="">
  </div>

@@ -1,10 +1,7 @@
 <h2>Add New Park</h2>
-<%= form_for @park do |p|%>
-	<%=p.label :name%>
+<%= bootstrap_form_for @park do |p|%>
 	<%=p.text_field :name%>
-	<%=p.label :description%>
 	<%=p.text_field :description%>
-	<%=p.label :picture%>
 	<%=p.text_field :picture%>
 	<%=p.submit%>
 <%end%>
