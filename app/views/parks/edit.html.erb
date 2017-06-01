@@ -1,0 +1,17 @@
+<!-- <h1>Parks#edit</h1>
+<p>Find me in app/views/parks/edit.html.erb</p>
+ -->
+
+<h2>Edit Park Information</h2>
+
+<%= form_for @park do |p|%>
+	<%=p.label :name%>
+	<%=p.text_field :name%>
+	<%=p.label :description%>
+	<%=p.text_field :description%>
+	<%=p.label :picture%>
+	<%=p.text_field :picture%>
+	<%=p.submit%>
+<%end%>
+<%= link_to "Delete Park", park_path(@park), method: :delete, class: 'btn btn-danger' %>
+
